@@ -1,0 +1,533 @@
+
+/* =================================
+   1. GENERAL PAGE STYLING
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7faf7;
+}
+
+
+/* =================================
+   2. NAVIGATION BAR
+================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #2e7d32;
+}
+
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* =================================
+   4. BUTTONS
+================================= */
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: white;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+.secondary-button:hover {
+    background-color: #e8f5e9;
+}
+
+
+/* =================================
+   5. SECTION HEADINGS
+================================= */
+
+.how-it-works,
+.impact,
+.about {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.how-it-works,
+.about {
+    background-color: white;
+}
+
+.how-it-works h2,
+.impact h2,
+.about h2 {
+    font-size: 36px;
+    color: #1b5e20;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* =================================
+   6. HOW IT WORKS CARDS
+================================= */
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step-card {
+    width: 280px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #f7faf7;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    font-size: 45px;
+}
+
+.step-card h3 {
+    color: #2e7d32;
+}
+
+
+/* =================================
+   7. ABOUT SECTION
+================================= */
+
+.about p {
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* =================================
+   8. EXPECTED IMPACT SECTION
+================================= */
+
+.impact {
+    background-color: #e8f5e9;
+}
+
+.impact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.impact-card {
+    width: 260px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+}
+
+.impact-card h3 {
+    font-size: 25px;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.impact-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/* =================================
+   9. FOOTER
+================================= */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #1b5e20;
+    color: white;
+}
+
+
+/* =================================
+   10. LOGIN AND REGISTER PAGES
+================================= */
+
+.login-container {
+    width: calc(100% - 32px);
+    max-width: 480px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.login-container p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.login-container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input,
+.login-container select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 4px rgba(46, 125, 50, 0.3);
+}
+
+.login-container button {
+    margin-top: 25px;
+}
+
+.login-container a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   11. DASHBOARD STYLING
+================================= */
+
+.dashboard {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.dashboard h1 {
+    color: #1b5e20;
+    text-align: left;
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.dashboard h2 {
+    color: #2e7d32;
+}
+
+.dashboard-subtitle {
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+/* =================================
+   12. DASHBOARD CARDS
+================================= */
+
+.dashboard-card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h2 {
+    color: #2e7d32;
+}
+
+
+/* =================================
+   13. DASHBOARD FORMS
+================================= */
+
+.dashboard-card form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.dashboard-card label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.dashboard-card input,
+.dashboard-card textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.dashboard-card textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* =================================
+   14. FOOD LISTINGS
+================================= */
+
+.food-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.food-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #2e7d32;
+}
+
+.food-card h3 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.food-card p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+/* =================================
+   15. VOLUNTEER PICKUP CARDS
+================================= */
+
+.pickup-card {
+    background-color: white;
+    max-width: 600px;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pickup-card h3 {
+    color: #2e7d32;
+}
+
+.pickup-card p {
+    text-align: left;
+    font-size: 16px;
+}
+
+
+/* =================================
+   16. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .how-it-works,
+    .impact,
+    .about {
+        padding: 45px 20px;
+    }
+
+    .how-it-works h2,
+    .impact h2,
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .steps {
+        align-items: center;
+    }
+
+    .step-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .impact-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .dashboard {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .dashboard h1 {
+        font-size: 32px;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    .login-container {
+        margin: 40px auto;
+        padding: 25px;
+    }
+
+}

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FoodRescue - Restaurant Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🍃 FoodRescue
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Restaurant Dashboard -->
+    <section class="dashboard">
+
+        <h1>Restaurant Dashboard</h1>
+
+        <p class="dashboard-subtitle">
+            Help reduce food waste by sharing your surplus food.
+        </p>
+
+
+        <!-- Post Surplus Food Section -->
+        <div class="dashboard-card">
+
+            <h2>🍱 Post Surplus Food</h2>
+
+            <p>
+                Have extra food that can be redistributed?
+                Post the details below.
+            </p>
+
+            <form id="foodForm">
+
+                <label>Food Name</label>
+                <input
+                    type="text"
+                    id="foodName"
+                    placeholder="Example: Vegetable Rice"
+                    required
+                >
+
+                <label>Quantity</label>
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Number of meals"
+                    min="1"
+                    required
+                >
+
+                <label>Available Until</label>
+                <input
+                    type="time"
+                    id="availableUntil"
+                    required
+                >
+
+                <label>Pickup Location</label>
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter pickup location"
+                    required
+                >
+
+                <label>Description</label>
+                <textarea
+                    id="description"
+                    placeholder="Describe the food..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Post Surplus Food
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- My Food Listings Section -->
+        <div class="dashboard-card">
+
+            <h2>📦 My Food Listings</h2>
+
+            <div id="foodList">
+
+                <p>You haven't posted any food yet.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
